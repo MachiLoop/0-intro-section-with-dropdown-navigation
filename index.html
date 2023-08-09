@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="msyle.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="flex">
+        <div class="logo"><img src="/images/logo.svg" alt="" /></div>
+        <nav class="main-nav flex" data-visible="false">
+          <div class="nav-left">
+            <ul class="flex">
+              <li class="features">
+                <a href="" class="dropdown-btn" aria-expanded="false">
+                  <span>Features</span> <span class="arrow"></span
+                ></a>
+                <ul class="features-dropdown" data-visible="false">
+                  <li class="flex">
+                    <!-- <a href="" class="flex">
+                      <span><img src="/images/icon-todo.svg" alt="" /></span>
+                      Todo List
+                    </a> -->
+                    <span><img src="/images/icon-todo.svg" alt="" /></span>
+                    <a href="">Todo List</a>
+                  </li>
+                  <li class="flex">
+                    <!-- <a href="" class="flex">
+                      <span
+                        ><img src="/images/icon-calendar.svg" alt=""
+                      /></span>
+                      Calender
+                    </a> -->
+                    <span><img src="/images/icon-calendar.svg" alt="" /></span>
+                    <a href="">Calender</a>
+                  </li>
+                  <li class="flex">
+                    <!-- <a href="" class="flex">
+                      <span
+                        ><img src="/images/icon-reminders.svg" alt=""
+                      /></span>
+                      Reminders
+                    </a> -->
+                    <span><img src="/images/icon-reminders.svg" alt="" /></span>
+                    <a href="">Reminders</a>
+                  </li>
+                  <li class="flex">
+                    <!-- <a href="" class="flex">
+                      <span
+                        ><img src="/images/icon-planning.svg" alt=""
+                      /></span>
+                      Planning
+                    </a> -->
+                    <span><img src="/images/icon-planning.svg" alt="" /></span>
+                    <a href="">Planning</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="company">
+                <a href="" class="dropdown-btn" aria-expanded="false"
+                  ><span>Company</span><span class="arrow"></span
+                ></a>
+                <ul class="company-dropdown" data-visible="false">
+                  <li><a href="">History</a></li>
+                  <li><a href="">Our Team</a></li>
+                  <li><a href="">Blog</a></li>
+                </ul>
+              </li>
+              <li><a href="">Careers</a></li>
+              <li class="about-link"><a href="">About</a></li>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <ul class="flex">
+              <li><a href="">Login</a></li>
+              <li class="registerBtn">
+                <a class="register-link" href="">Register</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="mobile-menu__btn" aria-expanded="false"></div>
+      </header>
+      <main class="flex">
+        <div class="main-content">
+          <div class="main-content__message">
+            <h1>
+              Make <br />
+              remote work
+            </h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <a href="">Learn more</a>
+          </div>
+          <div class="main-content__brands">
+            <img src="/images/client-databiz.svg" alt="" />
+            <img src="/images/client-audiophile.svg" alt="" />
+            <img src="/images/client-meet.svg" alt="" />
+            <img src="/images/client-maker.svg" alt="" />
+          </div>
+        </div>
+        <div class="image-main">
+          <!-- <img src="/images/image-hero-mobile.png" alt="" /> -->
+          <img src="/images/image-hero-desktop.png" alt="" />
+          <!-- <h1>hello</h1> -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
