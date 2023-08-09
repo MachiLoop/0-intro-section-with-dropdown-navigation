@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+:root {
+  --primary-dark: hsl(0, 0%, 8%);
+  --primary-light: hsl(0, 0%, 98%);
+  --primary-neutral: hsl(0, 0%, 41%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  /* overflow-x: hidden; */
+}
+
+.container {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-weight: 700;
+}
+/* NAVIGATION */
+header {
+  padding-inline: 30px;
+  margin: 20px 0px;
+  gap: 60px;
+  align-items: flex-start;
+  /* NOTE */
+  margin-bottom: 0px;
+}
+
+.main-nav {
+  justify-content: space-between;
+  width: calc(100% - 144px);
+}
+
+.main-nav a {
+  color: var(--primary-neutral);
+}
+
+.main-nav a:hover {
+  color: var(--primary-dark);
+}
+
+.nav-left ul {
+  /* gap: 20px; */
+  gap: 26px;
+}
+
+.nav-right ul {
+  /* gap: 16px; */
+  gap: 26px;
+}
+
+.registerBtn {
+  padding: 4px 8px;
+  border: 1px solid hsl(0, 0%, 41%);
+  border-radius: 10px;
+  outline: none;
+  margin-top: -4px;
+}
+
+.registerBtn:hover {
+  border: 2px solid hsl(0, 0%, 8%);
+}
+
+.registerBtn:hover .register-link {
+  color: hsl(0, 0%, 8%);
+}
+
+/* NAVIGATION DROP-DOWN */
+
+.features,
+.company {
+  position: relative;
+}
+
+.features a,
+.company a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.arrow {
+  /* background-image: url(/images/icon-arrow-down.svg); */
+  background-image: url(/images/icon-arrow-down.svg);
+  display: inline-block;
+  height: 6px;
+  width: 10px;
+  background-position: center;
+  /* margin-top: 4px; */
+}
+
+ul[class*="dropdown"] {
+  background-color: red;
+  position: absolute;
+  top: 30px;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  display: none;
+}
+
+/* SECTION JS */
+.dropdown-btn[aria-expanded="true"] .arrow {
+  background-image: url(/images/icon-arrow-up.svg);
+}
+
+ul[class*="dropdown"][data-visible="true"] {
+  display: block;
+}
+
+/* SECTION JS */
+/* .features:hover .features-dropdown {
+  display: block;
+} */
+
+/* .company:hover .company-dropdown {
+  display: block;
+} */
+
+.features-dropdown {
+  left: -70px;
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+}
+
+.features-dropdown li {
+  gap: 16px;
+  margin-block: 8px;
+}
+
+.features-dropdown li span {
+  width: 16px;
+  text-align: center;
+}
+
+.company-dropdown {
+  right: -18px;
+  border: none;
+  outline: none;
+  width: 100px;
+  padding: 8px 20px;
+}
+
+.company-dropdown li {
+  margin-block: 12px;
+}
+
+/* MAIN SECTION */
+/* NOTE */
+
+main {
+  align-items: flex-end;
+  width: 85%;
+  margin: 0px auto;
+  margin-top: 48px;
+}
+
+.image-main img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-content {
+  flex-basis: 55%;
+  flex-shrink: 1;
+}
+
+.main-content__message {
+  margin-bottom: 40px;
+}
+
+.main-content__message h1 {
+  font-size: 5.8rem;
+  margin-bottom: 56px;
+  line-height: 5rem;
+}
+
+.main-content__message p {
+  margin-bottom: 56px;
+  width: 80%;
+  color: hsl(0, 0%, 41%);
+  /* NOTE */
+  width: 62%;
+  font-size: 18px;
+  word-spacing: 8px;
+  /* NOTE */
+}
+
+.main-content__message a {
+  /* FIXME BORDER REMOVE */
+  border: 1px solid black;
+  padding: 8px 16px;
+  border-radius: 8px;
+  /* FIXME WIDTH  REMOVE*/
+  width: 120px;
+  font-weight: 600;
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+}
+
+.main-content__message a:hover {
+  color: var(--primary-dark);
+  background-color: var(--primary-light);
+}
+
+.main-content__brands {
+  margin-top: 120px;
+}
+
+.main-content__brands img {
+  margin-right: 24px;
+}
+
+.image-main {
+  height: 600px;
+  flex-basis: 45%;
+  text-align: right;
+}
+
+.mobile-menu__btn {
+  display: none;
+}
+
+/*  */
+/*  */
+/*  */
+/* .image-main {
+  background-image: url(images/image-hero-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} */
